@@ -1,0 +1,29 @@
+{
+  "name": "@fedtti/booking-form",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/fedtti/booking-form#readme",
+  "bugs": {
+    "url": "https://github.com/fedtti/booking-form/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedtti/booking-form.git"
+  },
+  "scripts": {
+    "build": "tsc && vite build --mode production",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "vite": "npm:rolldown-vite@latest"
+  },
+  "private": true,
+  "type": "module"
+}
