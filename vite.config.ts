@@ -9,7 +9,7 @@ export default {
     rolldownOptions: {
       input: {
         'assets/js/booking-form': 'src/ts/booking-form.ts',
-        demo: 'demo.html',
+        index: 'index.html',
       },
       output: [
         {
