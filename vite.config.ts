@@ -8,12 +8,15 @@ export default {
     emptyOutDir: true,
     rolldownOptions: {
       input: {
+        'assets/css/style': 'src/scss/style.scss',
+        'assets/js/app': 'src/ts/app.ts',
         'assets/js/booking-form': 'src/ts/booking-form.ts',
         index: 'index.html',
       },
       output: [
         {
           entryFileNames: '[name].js',
+          assetFileNames: '[name].[ext]',
         }
       ]
     },
