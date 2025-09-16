@@ -18,4 +18,7 @@ export default {
       ]
     },
   },
+  preview: {
+    open: true,
+  }
 } satisfies UserConfig;

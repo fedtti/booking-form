@@ -9,6 +9,8 @@ class BookingForm extends HTMLElement {
     const method = this.getAttribute('method') || '';
     const legend = this.getAttribute('legend') || '';
     const firstName = this.getAttribute('first-name') || '';
+    const lastName = this.getAttribute('last-name') || '';
+    const email = this.getAttribute('email') || '';
 
     bookingFormContainer.innerHTML = `
       <form action="${action}" method="${method}">
@@ -16,10 +18,19 @@ class BookingForm extends HTMLElement {
           <legend>${legend}</legend>
           ${firstName && `
             <label for="first-name">${firstName}</label>
-            <input id="first-name" name="first-name" type="text" placeholder="" autocomplete="given-name" required>
+            <input id="first-name" name="first-name" type="text" placeholder="" autocomplete="given-name">
+          `}
+          ${lastName && `
+            <label for="last-name">${lastName}</label>
+            <input id="last-name" name="last-name" type="text" placeholder="" autocomplete="family-name">
+          `}
+          ${email && `
+            <label for="email">${email}</label>
+            <input id="email" name="email" type="email" placeholder="" autocomplete="off" required>
           `}
         </fieldset>
-
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
       </form>
     `;
 

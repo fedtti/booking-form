@@ -14,9 +14,9 @@
     "url": "git+https://github.com/fedtti/booking-form.git"
   },
   "scripts": {
-    "build": "tsc && vite build --mode production",
     "dev": "vite",
-    "preview": "vite preview"
+    "build": "tsc && vite build --mode production",
+    "preview": "tsc && vite build && vite preview"
   },
   "devDependencies": {
     "typescript": "^5.9.2"
